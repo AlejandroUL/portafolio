@@ -1,0 +1,422 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+}
+.menu__header{
+    display: flex;
+    padding-left: 1.6rem;
+    background-image: url(assets/vector.png);
+    background-repeat: no-repeat;
+}
+.menu__title{
+    font-size: 1.3rem;
+}
+.menu__list{
+    display: flex;
+}
+.menu__list__item, .menu__list__item__contato {
+    padding-left: 1.5rem;
+    align-self: baseline;
+}
+.menu__list__item__contato{
+    font-weight: bold;
+}
+/*Sección Title*/
+
+.title__div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.title__bio{
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+.title__network{
+    padding-top: 1rem;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+}
+
+/*Sección About*/
+
+
+.about__container{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.about__title{
+    color: var(--negro-100);
+    font-size: 2rem;
+    font-weight: 700;
+}
+.about__paragraph{
+    margin-top: 2rem;
+}
+/*sección skills*/
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    
+}
+.skills__title{
+    align-self: center;
+    font-weight: 700;
+    color: var(--negro-100);
+    font-size: 2rem;
+    margin: 2rem 2rem;
+}
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.skills__box{
+    width: 10%;
+    background-color: white;
+    padding: 5rem 3rem 1rem 0.8rem;
+}
+
+.skills__box ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.skills__box ul li{
+    
+    padding: 2.5rem 0rem 0rem 0rem;
+}
+.skills__html{
+    background-image: url(assets/htlm.png);
+    background-repeat: no-repeat;
+}
+.skills__js{
+    background-image: url(assets/js_icon.png);
+    background-repeat: no-repeat;
+}
+.skills__php{
+    background-image: url(assets/php_icon.png);
+    background-repeat: no-repeat;
+}
+.skills__nodejs{
+    background-image: url(assets/nodejs_icon.png);
+    background-repeat: no-repeat;
+}
+.skills__react{
+    background-image: url(assets/react_icon.png);
+    background-repeat: no-repeat;
+}
+.skills__css{
+    background-image: url(assets/css_icon.png);
+    background-repeat: no-repeat;
+}
+
+/* Experiencia Académica*/
+.academic{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.academic__title{
+    align-self: center;
+    font-weight: 700;
+    color: var(--negro-100);
+    font-size: 2rem;
+    margin: 2rem 0rem 2rem 0rem ;
+}
+.academic__courses{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+.academic__courses__box{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+}
+.academic__courses__item__img{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.academic__courses__item__img img{
+    
+    max-height:  130px;
+    max-width: 190px;
+    
+}
+
+.academic__courses__item__title{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.academic__courses__item__subtitle p{
+    align-self: center;
+}
+
+/* experiencia*/
+.experience{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.experience__section__title{
+    align-self: center;
+    font-weight: 700;
+    color: var(--negro-100);
+    font-size: 2rem;
+    margin: 2rem 0rem 2rem 0rem ;
+}
+.experiencie__box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.experience__img{
+    width: 70%;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.experience__title{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.experience__description{
+    display: flex;
+    gap: 1rem;
+}
+.experiencia__botao--repo{
+    font-weight: 400;
+    color: #2A7AE4;
+    background-color: var(--cor-de-fundo);
+    padding: 1rem;
+    border-width: 1px;
+    border-color: #2A7AE4;
+    font-family: Raleway;
+    font-style: normal;
+}
+.experiencia__botao--repo:hover{
+    cursor: pointer;
+}
+.experience__botao--demo{
+    background-color: #2A7AE4;
+    padding: 1rem;
+    border-width: 1px;
+    color: white;
+    font-weight: 400;
+    border-color: #2A7AE4;
+    font-family: Raleway;
+    font-style: normal;
+}
+.experience__botao--demo:hover{
+    cursor: pointer;
+}
+
+
+/*Contacto*/
+.formcontato{
+    padding-top: 4rem;
+}
+.formcontato__contacto{
+    display: flex;
+    padding-top: 4rem;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    justify-content: space-between;
+    
+}
+
+.formcontato__title{
+    font-weight: 700;
+    color: var(--negro-100);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+.formcontato__subtext{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--negro-100);
+}
+.label__cont{
+    font-size: 0.8rem;
+    color: #A2A2A2;
+    background-color: white;
+    padding: 8px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.formcontato__input{
+    border: none;
+    padding: 8px;
+    color: var(--negro-100);
+    font-family: 'Raleway';
+}
+.formcontato__form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.input__container{
+    display: flex;
+    flex-direction: column;
+}
+#asunto , #mensaje{
+    padding: 1rem;
+}
+#mensaje{
+    border: none;
+    resize: none;
+    overflow: auto;
+    font-family: 'Raleway';
+}
+#mensaje::placeholder{
+    font-family: 'Raleway';
+}
+.formcontato__botao{
+    width: max-content;
+    background-color: #2A7AE4;
+    padding: 1rem;
+    border-width: 1px;
+    color: white;
+    font-weight: 400;
+    border-color: #2A7AE4;
+    font-family: Raleway;
+    font-style: normal;
+}
+.formcontato__botao:hover{
+    cursor: pointer;
+}
+
+    
+/*footeer*/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.footer__rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menú */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sección sobre mi*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formación Académica*/
+
+/*Experiencia Profesional*/
+
+ /*Contacto*/
+
+/*Footer*/
+
+}

@@ -1,0 +1,14 @@
+.tudo{
+    padding: 1.5rem 10rem 1.5rem 10rem;
+}
+:root{
+    --azul-10: #EAF2FD;
+    --negro-100:#464646;
+}
+.about , .academic, .formcontato{
+    background-color: var(--azul-10);
+    margin-left: -10rem;
+    margin-right: -10rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
+}
